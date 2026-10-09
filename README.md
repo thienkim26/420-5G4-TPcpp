@@ -1,3 +1,7 @@
+# Travail Practique
+
+**Nguyen, Thien Kim**
+
 # Construire le projet
 Vous pouvez utiliser un dev container de base C++ de VScode.
 Le projet utilise cmake, pensez à l'inclure dans votre dev container.
@@ -9,11 +13,6 @@ $ cd build
 $ cmake ..
 $ make
 ```
-
-# Travail Practique
-
-**Thien Kim Nguyen**
-
 # Répertoire data
 
 Il contient 2 fichiers `books.txt`et `users.txt` que vous pouvez utilisez pour tester votre code.
