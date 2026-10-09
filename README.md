@@ -10,6 +10,10 @@ $ cmake ..
 $ make
 ```
 
+# Travail Practique
+
+**Thien Kim Nguyen**
+
 # Répertoire data
 
 Il contient 2 fichiers `books.txt`et `users.txt` que vous pouvez utilisez pour tester votre code.
