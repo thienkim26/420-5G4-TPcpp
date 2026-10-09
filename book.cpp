@@ -34,3 +34,9 @@ void Book::checkOut(const string& borrowerId) {
         this->borrowerId = borrowerId;
     }
 }
+
+// Return a book
+void Book::returnBook() {
+    isAvailable = true;
+    borrowerId = "";
+}
