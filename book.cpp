@@ -40,3 +40,9 @@ void Book::returnBook() {
     isAvailable = true;
     borrowerId = "";
 }
+
+// Display book information
+string Book::toString() const {
+    string bookDisplay = "Titre : " + title + "\nAuteur : " + author + 
+                            "\nISBN : " + isbn;
+}
