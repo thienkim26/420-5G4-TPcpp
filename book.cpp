@@ -48,3 +48,11 @@ string Book::toString() const {
 
     return bookDisplay;
 }
+
+// Format for file storage
+string Book::toFileFormat() const {
+    string bookFormat = title + "|" + author + "|" +
+                         isbn + "|" + (isAvailable ? "1" : "0") + "|" + borrowerId;
+
+    return bookFormat;
+}
