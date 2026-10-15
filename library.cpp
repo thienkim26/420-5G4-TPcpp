@@ -93,7 +93,14 @@ vector<Book*> Library::getAllBooks() {
 
 // Add user to library
 void Library::addUser(const User& user) {
-    users.push_back(make_unique<User>(user));
+    // users.push_back(make_unique<User>(user));
+    User newUser = user;
+    if(newUser.getUserId() == "") {
+        int nxtNb = users.size() + 1;
+        string genId = to_string(nxtNb);
+        newUser.setUserId(genId);
+    }
+    users.push_back(make_unique<User>(newUser));
 }
 
 // Find user by ID
