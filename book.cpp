@@ -45,4 +45,6 @@ void Book::returnBook() {
 string Book::toString() const {
     string bookDisplay = "Titre : " + title + "\nAuteur : " + author + 
                             "\nISBN : " + isbn;
+
+    return bookDisplay;
 }
