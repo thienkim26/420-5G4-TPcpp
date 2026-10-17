@@ -159,6 +159,26 @@ void Library::displayAllBooks() {
         cout << "Aucun livre dans la bibliothèque.\n";
         return;
     }
+
+    // Ajouter les éléments à la fin
+    vector<Book*> listeTriee;
+    for (size_t i = 0; i < books.size(); ++i) {
+        listeTriee.push_back(books[i].get());
+    }
+
+    // Trier les livres selon où les règles des if
+    std::sort(listeTriee.begin(), listeTriee.end(), [](Book* a, Book* b) {
+        // Renvoie 'true' quand la première lettre du titre est au début de l'alphabet
+        if (a -> getTitle() < b -> getTitle()) {
+            return true;
+        }
+        // Renvoie 'false' quand la première lettre du titre est à la fin de l'alphabet
+        if (a -> getTitle() > b -> getTitle()) {
+            return false;
+        }
+        // Renvoie si les livres commence par la même lettre
+        return a -> getAuthor() <  b -> getAuthor();
+    });
     
     cout << "\n=== TOUS LES LIVRES ===\n";
     for (size_t i = 0; i < books.size(); ++i) {
