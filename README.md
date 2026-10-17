@@ -8,6 +8,10 @@
 
 - Afficher le nom d’utilisateur plutôt que l’id dans l’affichage des livres.
 
+## Gestion des Données
+
+- Tri des résultats par titre, auteur pour l'affichage (utilisation de la fonction de tri de la STL).
+
 # Construire le projet
 Vous pouvez utiliser un dev container de base C++ de VScode.
 Le projet utilise cmake, pensez à l'inclure dans votre dev container.
